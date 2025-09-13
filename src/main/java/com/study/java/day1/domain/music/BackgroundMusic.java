@@ -1,4 +1,4 @@
-package com.study.java.day1.domain;
+package com.study.java.day1.domain.music;
 
 
 import javax.sound.sampled.*;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class Mp3Player {
+public class BackgroundMusic {
     private ArrayList<Music> playList = new ArrayList<>();
     private Thread mp3Thread;
     private Clip clip;

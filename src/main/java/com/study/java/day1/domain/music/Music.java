@@ -1,4 +1,4 @@
-package com.study.java.day1.domain;
+package com.study.java.day1.domain.music;
 
 public class Music {
     private String musicName;

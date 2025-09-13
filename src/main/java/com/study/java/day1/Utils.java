@@ -1,6 +1,6 @@
 package com.study.java.day1;
 
-import com.study.java.day1.domain.Mp3Player;
+import com.study.java.day1.domain.music.BackgroundMusic;
 
 import java.io.IOException;
 
@@ -8,10 +8,10 @@ import static com.study.java.day1.CLIProgram.br;
 
 public class Utils {
 
-    private static Mp3Player mp3Player = new Mp3Player();
+    private static BackgroundMusic backgroundMusic = new BackgroundMusic();
 
     static {
-        mp3Player.inputMusic("drift-away-dusk-fss-no-copyright-music-234393.wav");
+        backgroundMusic.inputMusic("drift-away-dusk-fss-no-copyright-music-234393.wav");
     }
 
     /**
@@ -28,15 +28,15 @@ public class Utils {
                 return Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 if (input.equals("ON")) {
-                    mp3Player.playMusic();
+                    backgroundMusic.playMusic();
                     System.out.println("배경음악이 켜졌습니다.");
+
                     System.out.print("숫자를 입력해주세요! : ");
-                    continue;
                 } else if (input.equals("OFF")){
-                    mp3Player.stopMusic();
+                    backgroundMusic.stopMusic();
                     System.out.println("배경음악이 껴졌습니다.");
+
                     System.out.print("숫자를 입력해주세요! : ");
-                    continue;
                 } else {
                     System.out.print("숫자를 입력해주세요! : ");
                 }

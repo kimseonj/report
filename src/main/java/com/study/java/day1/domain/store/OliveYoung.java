@@ -1,4 +1,4 @@
-package com.study.java.day1.domain;
+package com.study.java.day1.domain.store;
 
 import com.study.java.day1.Utils;
 

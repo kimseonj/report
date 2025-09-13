@@ -1,6 +1,4 @@
-package com.study.java.day1.domain;
-
-import com.study.java.day1.Utils;
+package com.study.java.day1.domain.store;
 
 public class Store {
     String name;

@@ -1,6 +1,6 @@
 package com.study.java.day1;
 
-import com.study.java.day1.domain.*;
+import com.study.java.day1.domain.store.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
