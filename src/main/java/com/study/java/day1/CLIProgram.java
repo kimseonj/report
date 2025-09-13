@@ -55,19 +55,20 @@ public class CLIProgram {
                 new Product("스킨", 10000, 20),
                 new Product("로션", 8000, 2),
                 new Product("수분크림", 15000, 20)};
-        Store oliveYoungGangnam = new OliveYoungBranch("강남점", oliveYoungProducts, 100, 0);
-        Store oliveYoungPanyo = new OliveYoungBranch("판교점", oliveYoungProducts, 200, 10);
+        OliveYoungBranch oliveYoungGangnam = new OliveYoungBranch("강남점", oliveYoungProducts, 100, 0);
+        OliveYoungBranch oliveYoungPanyo = new OliveYoungBranch("판교점", oliveYoungProducts, 200, 10);
 
-        Store jewelryShop = new JewelryShop(new Product[]{
+        JewelryShop jewelryShop = new JewelryShop(new Product[]{
                 new Product("반지", 300000, 20),
                 new Product("목걸이", 800000, 49),
                 new Product("귀걸이", 150000, 30)});
 
-        Store junkShop = new JunkShop(new Product[]{
+        JunkShop junkShop = new JunkShop(new Product[]{
                 new Product("폐지", 1000, 10),
                 new Product("공병", 500, 40),
                 new Product("고철", 8000, 94)});
 
+        // 간접적인 업캐스팅
         stores.add(oliveYoungGangnam);
         stores.add(oliveYoungPanyo);
         stores.add(jewelryShop);
