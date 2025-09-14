@@ -89,8 +89,9 @@ public class Memo {
 
     public static int getInput(Scanner scanner) {
         System.out.print("메모를 선택하세요. : ");
+        int index = scanner.nextInt() - 1;
         scanner.nextLine(); // 엔터가 버퍼에 남아있어서 제거 용도로 사용
 
-        return scanner.nextInt() - 1;
+        return index;
     }
 }
